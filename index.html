@@ -7,14 +7,17 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata">
      </head>
      <body>
+    <div class="flex-container">
         <div class="title"><h1>Etch-a-Sketch</h1></div>
+        <div class="mode">Mode: Coloring</div>
         <div class="content">
             <div class="board"></div>
             <div class="buttons">
-                <button>Black</button>
-                <button>White</button>
-                <button>Random</button>
-                <button>Reset</button>
+                <button onclick="changeColor('black')">Black</button>
+                <button onclick="changeColor('white')">Eraser</button>
+                <button onclick="changeColor('gray')">Gray</button>
+                <button onclick="changeColor('random')">Random</button>
+                <button onclick="resetBoard()">Reset</button>
             </div>
             <div>
             <input 
@@ -28,6 +31,7 @@
             <button>Set Size</button>
             </div>
         </div>
+    </div>
      </body>
      <script src="script.js"></script>
 </html>
